@@ -330,6 +330,8 @@ body {
 }
 
 .team-icons {
+    height: 100%;
+    width: 100%;
     padding: 12px;
     color: currentColor;
 }
@@ -533,6 +535,8 @@ body {
 .join-icons {
     padding: 12px;
     color: currentColor;
+    height: 100%;
+    width: 100%;
 }
 
 .join-ellipse:hover {
