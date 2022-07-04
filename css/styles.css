@@ -76,6 +76,11 @@ body {
     padding-bottom: 94px;
 }
 
+.li-for-icons {
+    width: 44px;
+    height: 44px;
+}
+
 /* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header *//* header */
 
 .header {
@@ -229,10 +234,15 @@ body {
 }
 
 .benefits-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 100px;
+
 }
 
 .benefits-item {
@@ -330,19 +340,19 @@ body {
 }
 
 .team-icons {
-    height: 100%;
-    width: 100%;
-    padding: 12px;
     color: currentColor;
 }
 
 .team-icons:hover,
 .team-icons:focus {
-    color: #fff;
+    color: currentColor
 }
 
-.team-ellipse:hover {
+.team-ellipse:hover,
+.team-ellipse:focus {
+    outline: none;
     background-color: var(--brand-color);
+    color: #fff;
 }
 
 .team-icons-list {
@@ -371,18 +381,32 @@ body {
 }
 
 .clients-box {
+    width: 170px;
+    height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: #afb1b8;
-    padding: 15px 31px;
+
 }
 
-.clients-box:hover {
+.clients-links:hover,
+.clients-links:focus {
+    outline: none;
     border: 1px solid var(--brand-color);
     color: var(--brand-color);
+}
+
+
+.clients-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: currentColor;
 }
 
 .clients-icon {
@@ -461,7 +485,8 @@ body {
     border-top: none;
 }
 
-.card:hover {
+.portfolio-card:hover {
+    outline: none;
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -533,13 +558,12 @@ body {
 }
 
 .join-icons {
-    padding: 12px;
     color: currentColor;
-    height: 100%;
-    width: 100%;
 }
 
-.join-ellipse:hover {
+.join-ellipse:hover,
+.join-ellipse:focus {
+    outline: none;
     background-color: var(--brand-color);
 }
 
@@ -558,7 +582,8 @@ body {
     gap: 70px;
 }
 
-.li-for-icons {
-    width: 44px;
-    height: 44px;
+.footer-links:hover,
+.footer-links:focus {
+    outline: none;
+    color: var(--brand-color);
 }
